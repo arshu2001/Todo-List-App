@@ -6,6 +6,8 @@ import 'package:todo_list_app/features/authentication/viewmodel/login_provider.d
 import 'package:todo_list_app/features/authentication/viewmodel/user_regprovider.dart';
 import 'package:todo_list_app/features/home/view/category.dart';
 import 'package:todo_list_app/features/home/viewmodel/category_provider.dart';
+import 'package:todo_list_app/vehicle/view/vehicle_list.dart';
+import 'package:todo_list_app/vehicle/view/vehicle_list_page.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,7 +39,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: LoginScreen(),
+      home: VehicleListPage(),
     );
   }
 }
+ 
